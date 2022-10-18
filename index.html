@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: rgb(20, 169, 169);
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+        }
+
+        .show {
+            display: none;
+        }
+
+        .content {
+            min-width: 100px;
+            background-color: aqua;
+            border-radius: 10px;
+            color: black;
+            font-size: 2rem;
+            margin-bottom: .8rem;
+            padding: 1rem;
+            color: rgb(143, 33, 33);
+
+        }
+
+        button {
+            font-size: 1.6rem;
+            font-weight: bold;
+            min-width: 60px;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <button id="aahilBtn">A</button>
+        <div class="content aahil show">AAHIL</div>
+        <button id="eanaBtn">E</button>
+        <div class="content eana show">EANA</div>
+
+    </div>
+    <script>
+
+        let aBtn = document.querySelector('#aahilBtn');
+        let eBtn = document.querySelector('#eanaBtn')
+        let aDiv = document.querySelector('.aahil')
+        let eDiv = document.querySelector('.eana')
+
+        aBtn.addEventListener('click', function(){
+            aDiv.classList.toggle('show');
+        });
+
+        eBtn.addEventListener('click', function(){
+            eDiv.classList.toggle('show');
+        });
+
+    </script>
+</body>
+</html>
