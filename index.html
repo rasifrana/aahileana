@@ -26,6 +26,7 @@
         }
 
         .content {
+            display: flex;
             min-width: 100px;
             background-color: aqua;
             border-radius: 10px;
@@ -45,19 +46,42 @@
             margin-bottom: 1rem;
             cursor: pointer;
         }
+        .img {
+            max-width: 300px;  
+        }
+
+        .img img {
+            width: 100%;
+            height: auto;
+        }
+
+        .main-content {
+            padding: 0.6rem;
+        }
     </style>
 </head>
 <body>
     <div class="wrapper">
         <button id="aahilBtn">A</button>
         <div class="content aahil show">
-           <h2>AAHIL</h2> 
-           <p>Hello! I am Aahil. I am 6 years old and I go to Scoil Ghrainne</p>
+            <div class="img">
+                <img src="./aahil.jpeg" alt="">
+            </div>
+            <div class="main-content">
+                <h2>AAHIL</h2> 
+                <p>Hello! I am Aahil. I am 6 years old and I go to Scoil Ghrainne</p>
+            </div>
+          
         </div>
         <button id="eanaBtn">E</button>
         <div class="content eana show">
-            <h2>EANA</h2> 
+            <div class="img"><img src="./eana.jpeg" alt=""></div>
+            <div class="main-content">
+                <h2>EANA</h2> 
            <p>Hello! I am Eana. I am 4 years old and I go to Scoil Ghrainne</p>
+
+            </div>
+            
         </div>
 
     </div>
